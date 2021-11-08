@@ -5,7 +5,7 @@ e.g palindromeChecker('racecar') // will return true
 
 function palindromeChecker(x) {
   let originalStr = x.toLowerCase();
-  let pali = x.split('').reverse().join('').toLowerCase();
+  let pali = x.toLowerCase().split('').reverse().join('');
   if (pali === originalStr) {
     return true;
   } else {
