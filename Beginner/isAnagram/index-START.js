@@ -6,10 +6,7 @@ don't. E.g
 */
 
 function isAnagram(stringA, stringB) {
-  let len1 = stringA.length;
-  let len2 = stringB.length;
-  if (len1 !== len2) {
-    console.log('Invalid Input');
+  if (stringB.length !== stringA.length) {
     return;
   }
   let str1 = stringA.split('').sort().join('');
