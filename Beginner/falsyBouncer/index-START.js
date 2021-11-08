@@ -7,11 +7,11 @@ E.g  falsyBouncer([1, 0, null, '', 5]) // should return [1,5]
 
 function falsyBouncer(array) {
   let result = [];
-  for (value of array) {
-    if (value) {
-      result.push(value);
+  array.forEach(el => {
+    if (el) {
+      result.push(el);
     }
-  }
+  });
   return result;
 }
 

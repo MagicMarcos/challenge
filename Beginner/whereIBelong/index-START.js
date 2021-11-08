@@ -11,15 +11,8 @@ function whereIBelong(arr, num) {
   if (arr.indexOf(num) === -1) {
     arr.push(num);
   }
-
   let newArr = arr;
-
-  function sortNumber(a, b) {
-    return a - b;
-  }
-
-  newArr.sort(sortNumber);
-
+  newArr.sort((a, b) => a - b);
   return newArr.indexOf(num);
 }
 

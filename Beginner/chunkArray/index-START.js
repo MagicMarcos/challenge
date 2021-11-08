@@ -4,6 +4,8 @@
  E.g  mergeArrays([1,2,3,3,3], [1,4,5,2]) // should return [1,2,3,4,5]
 */
 
-function chunkArray(array, size) {}
+function chunkArray(array, size) {
+  console.log(parameters);
+}
 
 module.exports = chunkArray;
