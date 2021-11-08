@@ -5,17 +5,11 @@
 */
 
 function mergeArrays(...arrays) {
-
-    let jointArray = []
-    
-    arrays.forEach(array => {
-        jointArray = [...jointArray, ...array]
-    });
-
-    return [...new Set([...jointArray])]
-
-    
+  let jointArray = [];
+  arrays.forEach(array => {
+    jointArray = [...jointArray, ...array];
+  });
+  return [...new Set([...jointArray])];
 }
 
-
-module.exports = mergeArrays
+module.exports = mergeArrays;

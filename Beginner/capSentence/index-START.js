@@ -6,7 +6,6 @@ return the equivalent of the sentence when capitalised. E.g
 
 function capSentence(str) {
   let strArr = str.split(' ');
-
   let result = strArr.map(el => {
     console.log(el.slice(1));
     return el[0].toUpperCase() + el.slice(1).toLowerCase();

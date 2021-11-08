@@ -8,12 +8,15 @@ than 1(index 0), but less than 2(index 1).
 */
 
 function whereIBelong(arr, num) {
-  if (arr.indexOf(num) === -1) {
-    arr.push(num);
+  arr.sort(function (a, b) {
+    return a - b;
+  });
+  for (let i = 0; i < arr.length; i++) {
+    if (num <= arr[i]) {
+      return i;
+    }
   }
-  let newArr = arr;
-  newArr.sort((a, b) => a - b);
-  return newArr.indexOf(num);
+  return arr.length;
 }
 
 module.exports = whereIBelong;
