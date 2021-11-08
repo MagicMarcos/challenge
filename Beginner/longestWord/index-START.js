@@ -4,7 +4,14 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 */
 
 function longestWord(text) {
-  return text.split('').reduce((a, c) => c + a);
+  let phrase = text.split(' ');
+  let longest = phrase[0];
+  for (let i = 1; i < phrase.length; i++) {
+    if (longest.length < phrase[i].length) {
+      longest = phrase[i];
+    }
+  }
+  return longest;
 }
 
 module.exports = longestWord;
