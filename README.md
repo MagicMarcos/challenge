@@ -1,14 +1,16 @@
 # algo-challenge
 
-factorial
+maxRecurringChar
 reverseString
 palindromeChecker
-mergerArrays
+mergeArrays
 vowelsCounter
 capSentence
 whereIBelong
 falsyBouncer
 fizzBuzz
+longestWord
 isAnagram
+factorial
 
 # challenge
