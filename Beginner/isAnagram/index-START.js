@@ -7,7 +7,7 @@ don't. E.g
 
 function isAnagram(stringA, stringB) {
   if (stringB.length !== stringA.length) {
-    return;
+    return false;
   }
   let str1 = stringA.split('').sort().join('');
   let str2 = stringB.split('').sort().join('');
