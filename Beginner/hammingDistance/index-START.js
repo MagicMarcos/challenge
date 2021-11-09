@@ -4,11 +4,12 @@ E.g hammingDistance('rover', 'river') // should return 1
 */
 
 function hammingDistance(stringA, stringB) {
+  // not strictly necessary since strings are the lengths
   if (stringA.length !== stringB.length) {
     return 0;
   }
   let count = 0;
-  for (let i = 0; i < stringA.length; i += 1) {
+  for (let i = 0; i < stringA.length; i++) {
     if (stringA[i] !== stringB[i]) {
       count += 1;
     }
@@ -17,3 +18,15 @@ function hammingDistance(stringA, stringB) {
 }
 
 module.exports = hammingDistance;
+
+//PREP
+// PARAM: two strings -> will always be strings of equal length and never empty
+// RETURN: a number (hamming distance) -> number of letters that need to change
+// EX: hammingDist('river', 'rover') // return 1
+// hammingDist('cat', 'dog') // return 3
+// hammingDist('butt', 'butt') // return 0
+// PSEUDO:
+// declare a count variable
+// loop (for loop) through one of your strings
+// checking if each letter in one string equal to the letter in the other
+// if letters are not the same, it will increase the count

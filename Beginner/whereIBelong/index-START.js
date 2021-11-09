@@ -18,3 +18,19 @@ function whereIBelong(arr, num) {
 }
 
 module.exports = whereIBelong;
+
+//PREP
+//Params
+//passing in an array and a number
+//is there neg nums , does it only pass in nums
+//can the array be empty
+
+//Result
+//is a number this is the index of the where the number is inserted
+//
+//Example
+
+//Pseudocode
+//sorting the array
+//loop through the array & check where we position the number
+//
