@@ -19,3 +19,13 @@ function fizzBuzz(n) {
 }
 
 module.exports = fizzBuzz;
+
+/* //PREP//
+p -> number with no funny business
+r -> all nums, fizz if div by 3, fizzbuzz if div by 5 or 3 or buzz if div by 5
+e -> fizzBuzz(6) -> 1,2,fizz,4,buzz,6
+p -> create a loop starting from 1 to n 
+  -> conditionals checking for each potential result 
+      -> fizz if div by 3, fizzbuzz if div by 5 or 3 or buzz if div by 5
+      -> !IMPORTANT: much check for fizzbuzz first! 
+*/

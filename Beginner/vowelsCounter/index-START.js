@@ -19,3 +19,14 @@ function vowelsCounter(text) {
 }
 
 module.exports = vowelsCounter;
+
+/* //PREP//
+params -> a string -- no funny business -- case sensitive
+return -> total number of vowels in the string
+example -> vowelsCounter('anehizxcv') // will return 3
+        -> vowelsCounter('bethel') // will return 2
+pseudo -> ensure string is lower case, then split by letter and loop 
+       -> declare an array with all vowels to compare to each letter in our loop 
+       -> increase a count variable each time a vowel is found 
+       -> return the count
+*/

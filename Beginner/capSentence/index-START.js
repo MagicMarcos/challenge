@@ -14,3 +14,14 @@ function capSentence(str) {
 }
 
 module.exports = capSentence;
+
+/* /PREP/
+p: string -> no funny business
+r: string but with every first letter capped and the rest lowercase
+e: capSentence('the tales of scotch!') // would return 'The Tales Of Scotch!'
+  -> capSentence('my Dog iS coOl') // would return 'My Dog Is Cool'
+p: split our string into an array of words and loop 
+  -> in each word, we convert the first letter [0] toUpperCase
+  -> concat with remaining word from splice method starting at idx 1 .topLowerCase()
+  -> join(' ') to return a string
+*/

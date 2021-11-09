@@ -4,9 +4,9 @@ e.g palindromeChecker('racecar') // will return true
 */
 
 function palindromeChecker(x) {
-  let originalStr = x.toLowerCase();
+  const str = x.toLowerCase();
   let pali = x.toLowerCase().split('').reverse().join('');
-  if (pali === originalStr) {
+  if (pali === str) {
     return true;
   } else {
     return false;
@@ -14,3 +14,14 @@ function palindromeChecker(x) {
 }
 
 module.exports = palindromeChecker;
+
+/* //PREP
+PARAMS: a string -> case sensitive.
+RETURN: boolean
+EXAMPLE: -> palindromeChecker('racecar') // will return true
+         -> palindromeChecker('travis scott is a nice guy') // will return false
+PSEUDO: -> convert string to lowerCase()
+        -> create a reverse version of our string
+        -> check if they're === 
+        -> return boolean
+*/

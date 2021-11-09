@@ -8,3 +8,13 @@ function reverseString(text) {
 }
 
 module.exports = reverseString;
+
+/* //PREP//
+params-> a string with no funny business
+return-> reversed string
+example-> reverseString('algorithms') // should return 'smhtirogla'
+       -> reverseString('cat') // should return 'tac'
+pseudo-> split word into array of letter 
+      -> use reverse method 
+      -> use join('') to change back to string and return
+*/

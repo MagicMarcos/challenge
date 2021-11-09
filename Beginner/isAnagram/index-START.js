@@ -19,3 +19,13 @@ function isAnagram(stringA, stringB) {
 }
 
 module.exports = isAnagram;
+
+/* //!PREP 
+PARAMS: two strings -> always a string, no funny business
+RETURN: true if anagram, false if not
+EXAMPLE: -> isAnagram('silent', 'listen') // should return true
+         -> isAnagram('catdog', 'listen') // should return false
+PSEUDO:
+  -> we can eliminate one case by checking length -> if not same != anagram
+  -> use split/sort/join to sort letters in a string then compare using strict comparison operator 
+*/
