@@ -5,7 +5,11 @@ where the sequence is:
 */
 
 function fibonacci(n) {
-  // Code goes here
+  let fib = [1, 1];
+  for (i = 0; i < n - 1; i++) {
+    fib.push(fib[i] + fib[i + 1]);
+  }
+  return fib[fib.length - 1];
 }
 
 module.exports = fibonacci;
