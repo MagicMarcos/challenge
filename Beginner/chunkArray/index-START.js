@@ -5,7 +5,20 @@
 */
 
 function chunkArray(array, size) {
-  console.log(parameters);
+  let chunked = [];
+  let chunker = [];
+  let chunkist = [];
+  while (array.length > size) {
+    if (array.length > size) {
+      chunked.push(array.splice(0, size));
+    } else if (array.length < size) {
+      chunker.push(array[i]);
+    }
+  }
+  chunkist = array;
+  console.log(chunkist);
+  chunked.push(chunkist);
+  return chunked;
 }
 
 module.exports = chunkArray;
