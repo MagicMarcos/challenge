@@ -1,6 +1,6 @@
 # algo-challenge
 
-maxRecurringChar
+1. maxRecurringChar
 reverseString
 palindromeChecker
 mergeArrays
