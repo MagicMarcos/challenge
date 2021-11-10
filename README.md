@@ -1,7 +1,7 @@
 # algo-challenge
 
 1. maxRecurringChar
-reverseString
+2. reverseString
 palindromeChecker
 mergeArrays
 vowelsCounter
